@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Layout } from './components/hoc/Layout/Layout'
+import TimerHooks from './components/Timer_withHooks/Timer_withHooks'
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Layout>
+      <TimerHooks />
+    </Layout>
+  )
 }
 
-export default App;
+
+
+// Здравствуйте, код-ревьюер!
+// После получения тестового задания позавчера(27.07.21) сперва я реализовал приложение,
+// используя statefull react class(исходники в папке containers), 
+// поскольку c этим функционалом до сегодняшнего дня работал намного чаще,
+// но после дня изучения хуков и rxjs я решил реализовать приложение с помощью Хуков(папка components),
+// куда и подключил rxjs

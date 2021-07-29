@@ -1,0 +1,17 @@
+.Layout {
+  min-height: 100vh;
+  overflow: hidden;
+  
+  display: flex;
+  flex-direction: column;
+
+  background: #040218;
+}
+
+.Layout main {
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
